@@ -14,8 +14,10 @@ https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschrei
 
 ## Stochastic Information Transmission Formulas
 
-See main.pdf and tet-lernen.md
-
+See 
+- main.pdf
+- tet-lernen.md
+- TET_Lernzettel.pdf
 
 
 
