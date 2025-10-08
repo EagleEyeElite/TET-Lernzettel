@@ -1,0 +1,174 @@
+\section{Wellen}
+
+\textbf{Ausbreitung:}\\
+Welle mit Ausbreitungsrichtung $\vec{e}_k = \vec{e}_z$. Daher nur $E_x$ und $H_y$ Komponente.
+
+\begin{align}
+\vec{S} = \vec{E} \times \vec{H} = \begin{pmatrix} E_x \\ 0 \\ 0 \end{pmatrix} \times \begin{pmatrix} 0 \\ H_y \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ E_x H_y \end{pmatrix}
+\end{align}
+
+
+\textbf{Komplexe Felddarstellung:}
+\begin{align}
+H(z,t) &= \text{Re}\{\underline{H}(z) \cdot e^{j\omega t}\} \\
+&= \text{Re}\{\underline{H}_0 e^{-z/\delta} e^{-jz/\delta} e^{j\omega t}\} \\
+&= \text{Re}\{\underline{H}_0 e^{-z/\delta} e^{j(\omega t - z/\delta)}\} \\
+&= H_0 e^{-z/\delta} \cos\left(\omega t - \frac{z}{\delta}\right)
+\end{align}
+
+
+\textbf{Wellengleichung:}($\epsilon$, $\mu$ konst.; $\kappa = 0$; $\vec{J} = 0$; $\text{div } \vec{E} = \text{div } \vec{H} = 0$) \hfill $\rightarrow$ Herleitung: $\text{rot } \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0$ und
+\begin{flushright}
+\phantom{$\rightarrow$ Herleitung: }$\text{rot } \vec{H} - \frac{\partial \vec{D}}{\partial t} = \vec{J}$
+\end{flushright}
+Für eine 1D-Funktion $f(x,t)$
+\begin{equation}
+\frac{\partial^2 f}{\partial x^2} - \epsilon\mu \frac{\partial^2 f}{\partial t^2} = 0
+\end{equation}
+
+Fourier-Transformation (Frequenzbereich):
+\begin{align}
+\Delta \underline{\vec{E}} + k^2 \underline{\vec{E}} &= 0 \quad \text{mit } k^2 = \omega^2\epsilon\mu\\
+\Delta \underline{\vec{H}} + k^2 \underline{\vec{H}} &= 0
+\end{align}
+
+
+D'Alembert'sche Lösung:
+\begin{equation}
+f(x, t) = F(x - ct) + G(x + ct), \quad c = \frac{1}{\sqrt{\epsilon\mu}}
+\end{equation}
+
+Allgemeine Lösung:
+
+$\rightarrow$ siehe \hyperlink{helmholtz_allgemeine_loesung}{allgemeine Helmholtz-Gleichung}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\textbf{Komplexe Permittivität (verlustbehaftete Medien):}\\
+In verlustbehafteten Dielektrika wird die Permittivität komplex:
+
+\begin{align}
+\underline{\varepsilon} &= \varepsilon' - j\varepsilon'' = \varepsilon_0(\varepsilon_r' - j\varepsilon_r'') \\
+\underline{\varepsilon} &= \varepsilon'(1 - j\tan\delta)
+\end{align}
+
+\begin{itemize}
+    \item $\varepsilon'$: Realteil (Energiespeicherung, Polarisation)
+    \item $\varepsilon''$: Imaginärteil (Verluste, Dissipation)
+\end{itemize}
+
+\textbf{Verlustwinkel (nicht die Eindringtiefe):}
+\begin{equation}
+\tan(\delta) = \frac{\varepsilon''}{\varepsilon'}
+\end{equation}
+
+Für kleine Verluste gilt: $\delta \ll 1$ (guter Isolator)
+
+
+
+\textbf{Wellenimpedanz}
+
+\begin{itemize}
+\item $Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}}$ -- Wellenimpedanz im Vakuum (Freiraumimpedanz) \hfill $[Z_0] = \Omega$
+\item $Z = \frac{E_x}{H_y} = \sqrt{\frac{\mu}{\varepsilon}}$ -- Verhältnis von E- zu H-Feld (Wellenimpedanz) \hfill $[Z] = \Omega$
+\item $\vec{H} = \frac{1}{Z} \vec{k} \times \vec{E}$ bzw. $H_y = \frac{E_x}{Z}$ -- E-H-Beziehung für ebene Wellen \hfill $[H] = \frac{\text{A}}{\text{m}}$
+\item $Z = \sqrt{\frac{\mu}{\varepsilon}} \approx \sqrt{\frac{\mu}{\varepsilon'}}$ -- Wellenimpedanz im verlustbehafteten Medium (reell für kleine Verluste) \hfill $[Z] = \Omega$
+\end{itemize}
+
+
+\textbf{Äquivalente Leitfähigkeit:}
+\begin{equation}
+\kappa = \omega\varepsilon'' = \omega\varepsilon'\tan(\delta)
+\end{equation}
+
+\begin{equation}
+\varepsilon'' = \frac{\kappa}{\omega}
+\end{equation}
+
+\textbf{Komplexe Wellenzahl:}
+\begin{equation}
+k = \beta - j\alpha = \omega\sqrt{\mu\varepsilon_c}
+\end{equation}
+
+\begin{itemize}
+    \item $\beta$: Phasenkonstante (bestimmt Wellenlänge)
+    \item $\alpha$: Dämpfungskonstante (bestimmt Absorption)
+\end{itemize}
+
+
+Für kleine Verluste ($\tan \delta \ll 1$):
+
+\begin{equation}
+k = \omega\sqrt{\mu_0 \varepsilon} = \omega\sqrt{\mu_0 \varepsilon'(1 - j\tan\delta)} \approx \beta - j\alpha
+\end{equation}
+
+\begin{align}
+\beta &= \omega\sqrt{\mu_0 \varepsilon'} = \omega\sqrt{\mu_0 \varepsilon_r \varepsilon_0} = \frac{\omega}{c}\sqrt{\varepsilon_r}\\
+\alpha &= \frac{\beta \tan \delta}{2} = \frac{\omega\sqrt{\mu_0 \varepsilon'} \tan \delta}{2}
+\end{align}
+
+
+Für kleine Verluste ($(1 + p)^q \approx 1 + pq \quad \text{für } p = \tan \delta \ll 1$):
+
+\begin{equation}
+\sqrt{1 - j\tan\delta} \approx 1 - j\frac{\tan\delta}{2}
+\end{equation}
+
+
+
+
+\textbf{Gedämpfte Wellenausbreitung:}
+\begin{equation}
+\underline{E}(z) = E_0 e^{-j k z} = E_0 e^{-\alpha z} e^{-j\beta z}
+\end{equation}
+
+Leistungsflussdichte nimmt exponentiell ab:
+\begin{equation}
+S_z(z) = S_0 e^{-2\alpha z}
+\end{equation}
+
+\textbf{Dämpfungsstrecke} ($-3$ dB, d.h. Halbierung der Leistung):
+\begin{equation}
+d = \frac{\ln(2)}{2\alpha} = \frac{\ln(2)}{2\kappa}
+\end{equation}
+
+
+
+
+
+
+\textbf{Poyntingscher Satz}
+
+\begin{align}
+\text{div}\,\overline{\vec{S}} = -\overline{p_V}
+\end{align}
+
+
+Die linke Seite beschreibt die \textbf{Änderung der Leistungsflussdichte} entlang der Ausbreitungsrichtung, die rechte Seite die \textbf{dissipierte Leistung} im Medium.
+
+differentielle Form im Frequenzbereich:
+
+\begin{align}
+\text{div}\,\underline{\vec{S}} = -\frac{1}{2}\underline{\vec{J}}^* \cdot \underline{\vec{E}} - j\omega\left(\overline{w_m} - \overline{w_e}\right)
+\end{align}
+
+
+
+
+
+Verknüpfung von $p$ und $k$:
+\begin{equation}
+p = jk
+\end{equation}
+

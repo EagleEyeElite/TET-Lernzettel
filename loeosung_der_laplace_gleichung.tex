@@ -1,0 +1,50 @@
+
+\subsubsection{Separationsansatz}
+Grundidee: Die Lösung einer partiellen Differentialgleichung wird als Produkt von Funktionen einzelner Variablen angesetzt:
+
+\begin{align}
+\Phi(x, y, z) &= f(x) \cdot g(y) \cdot h(z)\\
+\Delta\Phi(x, y, z) &= \frac{d^2 f(x)}{dx^2} g(y)h(z) + f(x) \frac{d^2 g(y)}{dy^2} h(z) + f(x)g(y) \frac{d^2h(z)}{dz^2} = 0\\
+% Division durch Φ(x,y,z)
+&= \underbrace{\frac{1}{f} \frac{d^2 f}{dx^2}}_{K_x} +
+\underbrace{\frac{1}{g} \frac{d^2 g}{dy^2}}_{K_y} +
+\underbrace{\frac{1}{h} \frac{d^2h}{dz^2}}_{K_z} = 0
+\end{align}
+
+% Einzellösungen
+Einzellösungen:
+% Fall 1: Kx = 0
+\begin{align}
+f(x) &= \begin{Bmatrix} 1 \\ x \end{Bmatrix} \quad \text{mit } K_x = 0 \tag{3.43}\\
+% Fall 2: Kx > 0
+f(x) &= \begin{Bmatrix} e^{k_x x} \\ e^{-k_x x} \end{Bmatrix} \quad \text{mit } K_x = k_x^2 > 0 \tag{3.44}\\
+% Fall 3: Kx < 0
+f(x) &= \begin{Bmatrix} \sin(k_x x) \\ \cos(k_x x) \end{Bmatrix} \quad \text{mit } K_x = -k_x^2 < 0 \tag{3.45}
+\end{align}
+
+
+% Erklärung der Notation
+Notation:
+\begin{itemize}
+    \item Die Konstanten $K$: Separationskonstante, als Quotient $f''/f$ definiert. 
+    \item Die Konstanten $k$: Skalierungsfaktor (ähnlich wie später die Wellenzahl $k$). Man beachte, dass je nach Funktion $K_x = \pm k_x^2$ gilt.
+    \item Die Separationsgleichung: $K_x + K_y + K_z = 0$.
+\end{itemize}
+
+
+\textbf{Flächenladung:}
+
+
+Integration des Gaußschen Gesetzes:
+
+\begin{align}
+\int_V \nabla \cdot \vec{D} \, dV = \oint_{\partial V} \vec{D} \cdot \hat{n} \, dA = \int_V \rho \, dV = Q_{\text{eingeschlossen}}
+\end{align}
+
+Mantelbeiträge (Höhe $h \to 0$):
+\begin{align}
+D_y(y=0^+) \cdot dA - D_y(y=0^-) \cdot dA = \sigma(x,z) \cdot dA
+\end{align}
+\begin{align}
+\Leftrightarrow D_y(y=0^+) - D_y(y=0^-) = \sigma(x,z)
+\end{align}

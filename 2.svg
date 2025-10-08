@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="107.04mm" height="50.178mm" version="1.1" viewBox="0 0 107.04 50.178" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clipPath250">
+   <path d="m0 0h304v143h-304z"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-16.957 -120.89)">
+  <g transform="matrix(.35278 0 0 -.35278 16.78 171.12)">
+   <g clip-path="url(#clipPath250)">
+    <g transform="scale(.1)">
+     <path d="m767.32 1418.7v-1417.3" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="10.001"/>
+     <path d="m600.9 1403.2c41.696 0 75.504-33.82 75.504-75.51 0-41.7-33.808-75.51-75.504-75.51-41.695 0-75.507 33.81-75.507 75.51 0 41.69 33.812 75.51 75.507 75.51z" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 57.822 128.71)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" xml:space="preserve"><tspan x="0" y="0">1</tspan></text>
+     </g>
+     <path d="m951.94 1403.2c41.696 0 75.505-33.82 75.505-75.51 0-41.7-33.809-75.51-75.505-75.51-41.695 0-75.504 33.81-75.504 75.51 0 41.69 33.809 75.51 75.504 75.51z" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 92.927 128.71)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" xml:space="preserve"><tspan x="0" y="0">2</tspan></text>
+     </g>
+     <path d="m625.59 993.54v-566.93h283.46v566.93h-239.72" fill="none" stroke="#231f20" stroke-dasharray="20.0012, 10.0006" stroke-miterlimit="2.6131" stroke-width="10.001"/>
+     <path d="m673.49 967.2-47.902 26.348 47.902 26.347v-52.695" fill="#231f20" fill-rule="evenodd"/>
+     <g transform="scale(10)" font-family="'Times New Roman'">
+      <text transform="matrix(1 0 0 -1 45.058 104.17)" fill="#231f20" font-size="12px" font-style="italic" xml:space="preserve"><tspan x="0" y="0">A</tspan></text>
+      <g fill="#918f90" font-style="italic">
+       <text transform="matrix(1 0 0 -1 .76992 48.914)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">E</tspan></text>
+       <text transform="matrix(1 0 0 -1 7.4043 45.917)" font-size="8.9999px" xml:space="preserve"><tspan x="0 2.501961 4.7519259" y="0">t,1</tspan></text>
+       <text transform="matrix(1 0 0 -1 29.318 77.965)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">E</tspan></text>
+       <text transform="matrix(1 0 0 -1 35.952 74.968)" font-size="8.9999px" xml:space="preserve"><tspan x="0 4.4999299 6.7498951" y="0">n,1</tspan></text>
+      </g>
+      <text transform="matrix(1 0 0 -1 100.21 54.99)" fill="#231f20" font-size="12px" font-style="italic" xml:space="preserve"><tspan x="0" y="0">b</tspan><tspan x="-18.143" y="28.8645">h</tspan></text>
+      <text transform="matrix(1 0 0 -1 100.06 26.125)" fill="#231f20" font-size="12px" xml:space="preserve"><tspan x="0" y="0">0</tspan></text>
+     </g>
+     <path d="m890.32 295.9h77.106" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <path d="m993.2 295.9-26.125 13.066v-26.133l26.125 13.067" fill="#231f20" fill-rule="evenodd"/>
+     <g transform="scale(10)" fill="#231f20" font-size="12px">
+      <text transform="matrix(1 0 0 -1 83.061 110.37)" font-family="Symbol" xml:space="preserve"><tspan x="0" y="0">?</tspan></text>
+      <text transform="matrix(1 0 0 -1 88.991 110.37)" font-family="'Times New Roman'" font-style="italic" xml:space="preserve"><tspan x="0" y="0">A</tspan></text>
+     </g>
+     <g fill="none" stroke-miterlimit="2.6131">
+      <path d="m682.9 903.89-146.95 152.95" stroke="#231f20" stroke-width="2.16"/>
+      <path d="m832.85 993.54 48.105 89.527" stroke="#231f20" stroke-width="2.16"/>
+      <g stroke="#918f90" stroke-width="20.001">
+       <path d="m200.4 284.88v397.8"/>
+       <path d="m149.23 619.27 51.165 78.926 51.203-78.926"/>
+       <path d="m200.4 710.08h539.53"/>
+       <path d="m676.52 761.24 78.921-51.164-78.921-51.203"/>
+      </g>
+      <path d="m200.4 284.88 545.1 408.82" stroke="#231f20" stroke-width="20.001"/>
+      <path d="m664.39 696.58 93.464 6.395-32.289-87.965" stroke="#231f20" stroke-width="19.922"/>
+     </g>
+     <g transform="scale(10)" fill="#231f20" font-family="'Times New Roman'" font-style="italic">
+      <text transform="matrix(1 0 0 -1 41.288 32.923)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">E</tspan></text>
+      <text transform="matrix(1 0 0 -1 46.666 29.926)" font-size="8.9999px" xml:space="preserve"><tspan x="0" y="0">1</tspan></text>
+     </g>
+     <path d="m435.28 425.01h64.586l-25.836 12.918m0-25.836 25.836 12.918" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 108.82 3.3371)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" font-style="italic" xml:space="preserve"><tspan x="0" y="0">n</tspan></text>
+     </g>
+     <path d="m1097.4 109.3h64.58l-25.83 12.918m0-25.832 25.83 12.914" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)" fill="#231f20" font-family="'Times New Roman'" font-style="italic">
+      <text transform="matrix(1 0 0 -1 111.37 98.406)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">E</tspan></text>
+      <text transform="matrix(1 0 0 -1 118.05 95.409)" font-size="8.9999px" xml:space="preserve"><tspan x="0" y="0">2</tspan></text>
+     </g>
+     <g fill="none" stroke="#231f20" stroke-miterlimit="2.6131">
+      <path d="m1136.1 1079.8h64.58l-25.83 12.92m0-25.83 25.83 12.91" stroke-width="5.0003"/>
+      <path d="m969.66 979.73v-539.31" stroke-width="2.16"/>
+      <path d="m995.44 947.78-25.782 39.778-25.804-39.778" stroke-width="10.08"/>
+      <path d="m995.44 472.38-25.782-39.777-25.804 39.777" stroke-width="10.08"/>
+      <path d="m896.18 377.4h-255.85" stroke-width="2.16"/>
+      <path d="m864.22 351.62 39.777 25.785-39.777 25.805" stroke-width="10.08"/>
+      <path d="m672.28 351.62-39.773 25.785 39.773 25.805" stroke-width="10.08"/>
+      <path d="m767.32 710.08 323.13 403.91" stroke-width="20.001"/>
+      <path d="m1011.3 1096.5 88.8 29.52-9.28-93.14" stroke-width="19.899"/>
+      <path d="m767.32 72.285h196.66" stroke-width="20.001"/>
+     </g>
+     <path d="m955.74 124.57 95.048-52.281-95.048-52.285v104.57" fill="#231f20" fill-rule="evenodd"/>
+     <path d="m2468.1 1418.7 0.01-1417.3" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="10.001"/>
+     <path d="m2396.4 355.88 141.73 141.73 0.86 566.8-142.59-140.76v-567.77" fill="#e9e9e9" fill-rule="evenodd"/>
+     <path d="m2396.4 355.88 141.73 141.73 0.86 566.8-142.59-140.76z" fill="none" stroke="#e9e9e9" stroke-miterlimit="2.6131" stroke-width="20.001"/>
+     <path d="m2468.1 994.44 0.01-566.85" fill="none" stroke="#bdbcbc" stroke-miterlimit="2.6131" stroke-width="10.001"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 278.9 3.3371)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" font-style="italic" xml:space="preserve"><tspan x="0" y="0">n</tspan></text>
+     </g>
+     <path d="m2798.2 109.3h64.59l-25.84 12.918m0-25.832 25.84 12.914" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <path d="m2301.7 1403.2c41.7 0 75.51-33.82 75.51-75.51 0-41.7-33.81-75.51-75.51-75.51s-75.51 33.81-75.51 75.51c0 41.69 33.81 75.51 75.51 75.51z" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1,0,0,-1,227.9,128.71)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" xml:space="preserve"><tspan x="0" y="0">1</tspan></text>
+     </g>
+     <path d="m2652.7 1403.2c41.69 0 75.5-33.82 75.5-75.51 0-41.7-33.81-75.51-75.5-75.51-41.7 0-75.51 33.81-75.51 75.51 0 41.69 33.81 75.51 75.51 75.51z" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 263 128.71)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" xml:space="preserve"><tspan x="0" y="0">2</tspan></text>
+     </g>
+     <path d="m2255.5 922.68 141.73 141.73m141.73-141.73 141.73 141.73m-425.19-708.66 141.73 141.73m141.73-141.73 141.73 141.73m-283.46 566.93v-566.93h283.46v566.93zm-141.74-141.73v-566.93h283.46v566.93z" fill="none" stroke="#231f20" stroke-dasharray="20.0012, 10.0006" stroke-miterlimit="2.6131" stroke-width="10.001"/>
+     <g transform="scale(10)">
+      <text transform="matrix(1 0 0 -1 280.42 70.199)" fill="#231f20" font-family="'Times New Roman'" font-size="12px" font-style="italic" xml:space="preserve"><tspan x="0" y="0">A</tspan><tspan x="-67.171898" y="-33.7887">V</tspan></text>
+     </g>
+     <g fill="none" stroke="#231f20" stroke-miterlimit="2.6131">
+      <path d="m1901.2 284.88 545.1 408.82" stroke-width="20.001"/>
+      <path d="m2365.2 696.58 93.46 6.395-32.29-87.965" stroke-width="19.922"/>
+      <path d="m2468.1 710.08 549.9 687.38" stroke-width="20.001"/>
+      <path d="m2938.9 1380 88.8 29.52-9.28-93.14" stroke-width="19.899"/>
+     </g>
+     <g transform="scale(10)" fill="#231f20" font-family="'Times New Roman'" font-style="italic">
+      <text transform="matrix(1 0 0 -1 194.14 46.37)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">D</tspan></text>
+      <text transform="matrix(1 0 0 -1 199.51 43.373)" font-size="8.9999px" xml:space="preserve"><tspan x="0" y="0">1</tspan></text>
+     </g>
+     <path d="m1963.8 559.48h64.59l-25.83 12.918m0-25.836 25.83 12.918" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <g transform="scale(10)" fill="#231f20" font-family="'Times New Roman'" font-style="italic">
+      <text transform="matrix(1 0 0 -1 290.35 108.25)" font-size="12px" xml:space="preserve"><tspan x="0" y="0">D</tspan></text>
+      <text transform="matrix(1 0 0 -1 297.04 105.26)" font-size="8.9999px" xml:space="preserve"><tspan x="0" y="0">2</tspan></text>
+     </g>
+     <g fill="none" stroke="#231f20" stroke-miterlimit="2.6131">
+      <path d="m2925.9 1178.3h64.58l-25.83 12.92m0-25.84 25.83 12.92" stroke-width="5.0003"/>
+      <path d="m2521.6 300.63h-255.84" stroke-width="2.16"/>
+      <path d="m2489.7 274.85 39.77 25.785-39.77 25.801" stroke-width="10.08"/>
+      <path d="m2297.7 274.85-39.78 25.785 39.78 25.801" stroke-width="10.08"/>
+      <g stroke-width="2.16">
+       <path d="m2631.4 764.13 153-23.629"/>
+       <path d="m2195.3 1052.3 162.23-217.28"/>
+       <path d="m2608.6 1126.2-90.86-134.58"/>
+       <path d="m2541.1 450.8 57.94-36.211m-57.94 110.47 105.74-66.086m-105.74 140.34 140.5-87.812m-140.5 162.07 139.05-86.91m-139.05 161.17 136.16-85.098m-136.16 159.36 139.05-86.91m-139.05 161.17 141.95-88.722m-115.76 146.6 114.31-71.441m-65.14 114.98 66.59-41.621m-24.16 89.364 22.71-14.2"/>
+      </g>
+      <path d="m2468.1 72.285h196.66" stroke-width="20.001"/>
+     </g>
+     <path d="m2656.5 124.57 95.04-52.281-95.04-52.285v104.57" fill="#231f20" fill-rule="evenodd"/>
+     <g transform="scale(10)" fill="#231f20" font-size="12px">
+      <text transform="matrix(1 0 0 -1 259.71 114.44)" font-family="Symbol" xml:space="preserve"><tspan x="0" y="0">s</tspan></text>
+      <text transform="matrix(1 0 0 -1 218.07 16.68)" font-family="'Times New Roman'" font-style="italic" xml:space="preserve"><tspan x="0" y="0">h</tspan></text>
+      <text transform="matrix(1 0 0 -1 236.07 16.68)" font-family="'Times New Roman'" xml:space="preserve"><tspan x="0" y="0">0</tspan></text>
+     </g>
+     <path d="m2250.4 201.44h77.11" fill="none" stroke="#231f20" stroke-miterlimit="2.6131" stroke-width="5.0003"/>
+     <path d="m2353.3 201.44-26.13 13.063v-26.129l26.13 13.066" fill="#231f20" fill-rule="evenodd"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

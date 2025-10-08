@@ -1,0 +1,228 @@
+\section{Statik}
+
+Vereinfachte Maxwell-Gleichungen ($\frac{\partial}{\partial t} = 0$):
+\begin{itemize}
+\item $\text{div } \vec{D} = \rho$
+\item $\text{rot } \vec{H} = \vec{J}$
+\end{itemize}
+
+Hier aufpassen: keine poission Gleichung lösen (da keine Ladung im Inneren des Raums ist, selbst Flächenladung braucht keine Poisson-Gleichung)
+
+Randwertproblem/ Integral kommt auf jeden Fall als Rechenaufgabe in Klausur -> Also Potenzialproblem auf jeden Fall!
+
+\subsection{Stetigkeitsbedingungen}
+
+\begin{figure}[H]
+\centering
+\includesvg[width=0.45\textwidth]{1.svg}
+\hfill
+\includesvg[width=0.45\textwidth]{2.svg}
+\end{figure}
+
+\begin{itemize}
+\item $D_{n2} - D_{n1} = \sigma$
+\item $B_{n2} - B_{n1} = 0$
+\item $E_{t2} - E_{t1} = 0$
+\item $H_{t2} - H_{t1} = \vec{K}$
+\end{itemize}
+
+\subsection{Elektrostatik}
+
+\subsubsection{Laplace-Operator Bedeutung}
+\textbf{Physikalisch:}
+\begin{align}
+\Delta \Phi &= \nabla \cdot (\nabla \Phi) = \nabla \cdot \vec{E}
+\end{align}
+$\Delta \Phi = 0$ bedeutet: Keine Quellen/Senken, harmonischer Verlauf, ladungsfreies Gebiet
+
+
+\textbf{Elektrostatik:}
+\begin{align}
+\text{Ladungsfrei:} \quad &\Delta \Phi = 0 \quad \text{(Laplace)}\\
+\text{Mit Ladungen:} \quad &\Delta \Phi = -\frac{\rho}{\varepsilon} \quad \text{(Poisson)}\\
+\text{Stationäre Strömung:} \quad &\text{div } \vec{J} = 0 \quad \text{(Potentialgleichung)}
+\end{align}
+
+
+\subsubsection{Laplace-Gleichung}
+Allgemeine Form:
+\begin{align}
+\Delta\Phi(x, y, z) = \text{div grad } \Phi(x, y, z) = 0 \qquad (\text{div } \vec{D} = \varrho \text{, mit }\varrho = 0)
+\end{align}
+
+
+
+
+Kartesische Koordinaten $(x, y, z)$:
+\begin{align}
+\Delta \Phi &= \frac{\partial^2 \Phi}{\partial x^2} + \frac{\partial^2 \Phi}{\partial y^2} + \frac{\partial^2 \Phi}{\partial z^2} = 0
+\end{align}
+Zylinderkoordinaten $(\rho, \varphi, z)$:
+\begin{align}
+\Delta \Phi &= \frac{\partial^2 \Phi}{\partial \rho^2} + \frac{1}{\rho}\frac{\partial \Phi}{\partial \rho} + \frac{1}{\rho^2}\frac{\partial^2 \Phi}{\partial \varphi^2} + \frac{\partial^2 \Phi}{\partial z^2} = 0
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+\input{loeosung_der_laplace_gleichung}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Separationsansatz}
+
+? (Bernoulli-Ansatz), ist das der Bernoulli Ansatz? - oder ist der eigentlich nur später für die Wellen?
+
+
+\begin{align}
+\Phi(\rho,\varphi) &= f(\rho) \cdot g(\varphi)
+\end{align}
+
+\textbf{Separationsbedingung für 2D-Zylinderkoordinaten:}
+Einsetzen von $\Phi(\rho,\varphi) = f(\rho) \cdot g(\varphi)$ in die Laplace-Gleichung und Umformung in die Standardform für das Separationsprinzip:
+
+\begin{align}
+\underbrace{\rho^2 \cdot \frac{f''(\rho)}{f(\rho)} + \rho \cdot \frac{f'(\rho)}{f(\rho)}}_{\text{nur von } \rho \text{ abhängig}} + \underbrace{\frac{g''(\varphi)}{g(\varphi)}}_{\text{nur von } \varphi \text{ abhängig}} &= 0
+\end{align}
+
+Da beide Terme konstant sein müssen, setzen wir:
+\begin{align}
+\rho^2 \cdot \frac{f''(\rho)}{f(\rho)} + \rho \cdot \frac{f'(\rho)}{f(\rho)} &= +k_\rho^2\\
+\frac{g''(\varphi)}{g(\varphi)} &= -k_\varphi^2
+\end{align}
+
+mit der Bedingung $k_\rho^2 + k_\varphi^2 = 0$ bzw. $k_\rho^2 = -k_\varphi^2$.
+
+Dies führt zu den separierten Differentialgleichungen:
+\begin{align}
+\frac{d^2 f}{d\rho^2} + \frac{1}{\rho}\frac{df}{d\rho} - \frac{k_\rho^2}{\rho^2}f &= 0 \quad \text{(Radiale DGL)}\\
+\frac{d^2 g}{d\varphi^2} + k_\varphi^2 g &= 0 \quad \text{(Azimutale DGL)}
+\end{align}
+mit den Separationskonstanten $k_\rho$ und $k_\varphi$.
+
+\textbf{Lösung der azimutalen Gleichung:}
+\begin{align}
+\frac{d^2 g}{d\varphi^2} + k_\varphi^2 g &= 0
+\end{align}
+
+\textbf{Fall 1:} $k_\varphi^2 > 0$ (d.h. $k_\varphi = n$ reell)
+\begin{align}
+g(\varphi) &= \begin{Bmatrix} \cos(n\varphi) \\ \sin(n\varphi) \end{Bmatrix}
+\end{align}
+Periodizitätsbedingung: $g(\varphi + 2\pi) = g(\varphi)$ $\Rightarrow$ $n \in \mathbb{Z}$
+
+\textbf{Fall 2:} $k_\varphi^2 = 0$
+\begin{align}
+g(\varphi) &= \begin{Bmatrix} 1 \\ \varphi \end{Bmatrix}
+\end{align}
+Für Periodizität muss der $\varphi$-Term wegfallen $\Rightarrow$ $g(\varphi) = \text{const}$
+
+\textbf{Fall 3:} $k_\varphi^2 < 0$ (d.h. $k_\varphi = i\kappa$ imaginär)
+\begin{align}
+g(\varphi) &= \begin{Bmatrix} e^{\kappa\varphi} \\ e^{-\kappa\varphi} \end{Bmatrix}
+\end{align}
+Diese Lösung ist \textbf{nicht periodisch} und wird daher bei Zylinderkoordinaten \textbf{verworfen}.
+
+\textbf{Lösung der radialen Gleichung:}
+Mit $k_\rho^2 = -k_\varphi^2$ erhalten wir:
+
+\textbf{Fall 1:} $n \neq 0$ (d.h. $k_\rho^2 = -n^2 < 0$)
+\begin{align}
+\frac{d^2 f}{d\rho^2} + \frac{1}{\rho}\frac{df}{d\rho} + \frac{n^2}{\rho^2}f &= 0
+\end{align}
+Lösung: $f(\rho) = \begin{Bmatrix} \rho^n \\ \rho^{-n} \end{Bmatrix}$
+
+\textbf{Fall 2:} $n = 0$ (d.h. $k_\rho^2 = 0$)
+\begin{align}
+\frac{d^2 f}{d\rho^2} + \frac{1}{\rho}\frac{df}{d\rho} &= 0
+\end{align}
+Lösung: $f(\rho) = \begin{Bmatrix} 1 \\ \ln\rho \end{Bmatrix}$
+
+\textbf{Allgemeine Lösung:}
+\begin{align}
+\Phi(\rho,\varphi) &= \begin{Bmatrix} 1 \\ \ln\rho \end{Bmatrix} \cdot \begin{Bmatrix} 1 \\ \varphi \end{Bmatrix} + \begin{Bmatrix} \rho^n \\ \rho^{-n} \end{Bmatrix} \cdot \begin{Bmatrix} \cos(n\varphi) \\ \sin(n\varphi) \end{Bmatrix}
+\end{align}
+
+
+
+\subsection{Magnetostatik}
+
+\textbf{Hochpermeable Materialien:}\\
+Für $\mu \gg \mu_0$ wird die magnetische Feldstärke stark reduziert, da das Material die magnetischen Feldlinien effizient führt.
+
+\begin{align}
+\mu \rightarrow \infty \quad \Rightarrow \quad \vec{H} \rightarrow 0 \quad \text{(bei endlichem } \vec{B}\text{)}
+\end{align}
+
+
+
+
+\textbf{Biot-Savart:}\\
+Magnetfeld $\vec{H}(\vec{r}_p)$ erzeugt durch stromdurchflossenen Leiter.
+
+\begin{align}
+\vec{H}(\vec{r}_p) = \frac{I}{4\pi} \int\limits_C \frac{d\vec{l} \times \vec{r}_d}{|\vec{r}_d|^3}
+\end{align}
+
+
+Aufbau des Magnetfeld-Problems:
+\begin{itemize}
+\item $\vec{r}_p$ -- Ortsvektor zum Aufpunkt P (wo wir das Magnetfeld berechnen wollen)
+\item $\vec{r}_q \text{ oder }\vec{r}'$ -- Ortsvektor zum Quellpunkt Q (Punkt auf dem stromdurchflossenen Leiter)
+\item $d\vec{l} = d\vec{r}_q$ -- Leiterelement, infinitesimales Vektorelement entlang des Leiters, zeigt in Richtung des Stroms
+\item $\vec{r}_d = \vec{r}_p - \vec{r}_q$ -- Abstandsvektor vom Quellpunkt Q zum Aufpunkt P
+\item $d\vec{l} \times \vec{r}_d$ -- Kreuzprodukt: Bestimmt die Richtung des Magnetfeldbeitrags (senkrecht zu beiden Vektoren)
+\item $|\vec{r}_d|^3$ -- Abstand im Nenner: Sorgt für die $1/r^2$-Abhängigkeit des Magnetfelds (mal ein zusätzlicher Faktor $r$ aus der Vektornormierung)
+\item $C$ -- Integrationspfad entlang des stromdurchflossenen Leiters
+\end{itemize}
+
+
+Beispiel Segment: Von $(a,0,0)$ bis $(a,a,0)$:
+
+\begin{align}
+d\vec{r}_q(t) &= (a, t, 0) \quad \text{mit } t \in [0,a] \text{ parametrisiert } C \\
+d\vec{l} &= \frac{d\vec{r}_q}{dt} \, dt
+\end{align}
+
+
+
+
+
+
+
+\textbf{Gegeninduktivität:}\\
+Die Gegeninduktivität $M$ beschreibt die magnetische Kopplung zwischen zwei Stromschleifen.
+
+\begin{align}
+M = \frac{\Psi}{I}
+\end{align}
+
+Dabei ist:
+\begin{itemize}
+\item Induzierte Spannung: $U_2 = -M \frac{dI_1}{dt}$ (Faraday'sches Induktionsgesetz)
+\end{itemize}

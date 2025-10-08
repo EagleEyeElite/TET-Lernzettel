@@ -1,0 +1,283 @@
+\section{Symbole}
+
+\textbf{Dach-Symbol ($\hat{\ }$):}
+\begin{itemize}
+\item Mit Dach: $\hat{\Phi}$ -- Konstante
+\item Ohne Dach: $\Phi(x)$ -- Funktion
+\end{itemize}
+
+
+\textbf{Komplexe Größen:}
+\begin{itemize}
+\item $\underline{Z}$ -- Komplexe Größe
+\item $Z' = \text{Re}(\underline{Z})$ -- Realteil (ein Strich)
+\item $Z'' = \text{Im}(\underline{Z})$ -- Imaginärteil (zwei Striche)
+\item $\underline{Z}^* = Z' - jZ''$ -- Komplex konjugiert
+\end{itemize}
+
+
+
+% alter code, wahrscheinlich falsch, aber irgendwas war mit der fourie trafo
+%\textbf{Phasor:}
+%\begin{itemize}
+%\item $v(t) = V_0 \cdot \cos(\omega t + \varphi) \overset{\mathcal{F}}{\circ\text{---}\bullet} \underline{V} = V_0 \cdot e^{j\varphi}$ -- Phasor, für feste Kreisfrequenz $\omega$
+%\item $Z(t) \overset{\mathcal{F}}{\circ\text{---}\bullet} \underline{Z}$ -- Phasor (Fourier-transformierte komplexe Amplitude)
+%\item $\underline{Z} = Z_0 e^{j\varphi}$ -- Exponentialdarstellung des Phasors
+%\item $Z(t) = \text{Re}\{\underline{Z} e^{j\omega t}\}$ -- Rücktransformation (physikalische Größe)
+%\end{itemize}
+%Der Phasor beschreibt nur Amplitude und Phase bei einer festen Frequenz.
+\textbf{Phasor:}
+\begin{itemize}
+\item $Z = Z(t) = Z_0 \cdot \cos(\omega t + \varphi) \leftrightarrow \underline{Z} = Z_0 e^{j\varphi}$ -- Phasor, für feste Kreisfrequenz $\omega$
+\item $Z(t) = \text{Re}\{\underline{Z} e^{j\omega t}\} = \text{Re}\{Z_0 e^{j\varphi + j\omega t}\}$ -- Rücktransformation (physikalische Größe)
+\end{itemize}
+Der Phasor beschreibt nur Amplitude und Phase bei einer festen Frequenz.
+
+
+\textbf{Balken-Symbol ($\overline{\phantom{x}}$):}
+\begin{itemize}
+\item $\overline{X}$ -- zeitlicher Mittelwert von X
+\item $\overline{|\vec{J}|^2} = \overline{|\vec{J}(t)|^2} = \overline{J_0^2 \cos^2(\omega t)} = \frac{1}{2}J_0^2 = \frac{1}{2}\underline{\vec{J}} \cdot \underline{\vec{J}}^*$ -- zeitlicher Mittelwert des Quadrats der Stromdichte
+\item $I_{\text{eff}} = \sqrt{\overline{I^2(t)}} = \sqrt{\overline{I_0^2 \cos^2(\omega t)}} = \sqrt{\frac{1}{2}I_0^2} = \frac{1}{\sqrt{2}}I_0$ -- Effektivstrom (RMS-Wert)
+\item $\overline{\vec{S}} = \overline{\vec{E} \times \vec{H}} = \frac{1}{2}\text{Re}\{\underline{\vec{E}} \times \underline{\vec{H}}^*\}$ -- zeitlicher Mittelwert des Poynting-Vektors
+\item $\overline{p_V} = \frac{1}{2}\kappa_{\text{äq}}|\underline{\vec{E}}|^2$ -- zeitgemittelte Volumenverlustleistungsdichte
+\end{itemize}
+
+
+\textbf{Hierarchie verschiedene Bezugsgrößen:}
+\begin{itemize}
+\item $P_V = \int\limits_V p_V \, dV$ -- Gesamte Verlustleistung \hfill $[P_V] = \text{W}$
+\item $P_V' = \int\limits_A p_V \, d\vec{A}$ -- Verlustleistung pro Längeneinheit \hfill $[P_V'] = \frac{\text{W}}{\text{m}}$
+\item $P_V'' = \int\limits_s p_V \, d\vec{s}$ -- Verlustleistung pro Flächeneinheit \hfill $[P_V''] = \frac{\text{W}}{\text{m}^2}$
+\item $p_V = \vec{J} \cdot \vec{E} = \frac{|\vec{J}|^2}{\kappa}$ -- Volumenverlustleistungsdichte \hfill $[p_V] = \frac{\text{W}}{\text{m}^3}$
+\end{itemize}
+
+
+\textbf{Maxwell-Gleichungen:}
+\begin{align}
+\text{div } \vec{D} &= \varrho \quad \text{(Gaußsches Gesetz)} \\
+\text{div } \vec{B} &= 0 \quad \text{(Quellenfreiheit des Magnetfeldes)} \\
+\text{rot } \vec{E} + \frac{\partial \vec{B}}{\partial t} &= 0 \quad \text{(Faradaysches Induktionsgesetz)} \\
+\text{rot } \vec{H} - \frac{\partial \vec{D}}{\partial t} &= \vec{J} \quad \text{(Ampèresches Gesetz/ Durchflutungsgesetz)}
+\end{align}
+
+Fourier-Transformation Beispiele:
+\begin{align}
+\text{rot } \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0 &\overset{\mathcal{F}}{\circ\text{---}\bullet} \text{rot } \underline{\vec{E}} + j\omega \underline{\vec{B}} = 0 \\
+\text{rot } \vec{H} - \frac{\partial \vec{D}}{\partial t} = \vec{J} &\overset{\mathcal{F}}{\circ\text{---}\bullet} \text{rot } \underline{\vec{H}} - j\omega \underline{\vec{D}} = \underline{\vec{J}}
+\end{align}
+
+Integralform Beispiele:
+\begin{align}
+\oint\limits_{\partial V} \vec{D} \cdot d\vec{A} &= \int\limits_V \varrho \, dV \\
+\oint\limits_{\partial A} \vec{H} \cdot d\vec{s} - \int\limits_A \frac{\partial \vec{D}}{\partial t} \cdot d\vec{A} &= \int\limits_A \vec{J} \cdot d\vec{A}
+\end{align}
+
+
+\textbf{Andere Gleichungen:}
+
+\begin{itemize}
+\item Poisson-Gleichung \hfill $\rightarrow$ Herleitung: $\text{div } \vec{D} = \varrho$
+\begin{align}
+\Delta \Phi &= -\frac{\varrho}{\varepsilon}
+\end{align}
+
+\item Laplace-Gleichung ($\varrho = 0$)
+\begin{align}
+\Delta \Phi &= 0
+\end{align}
+
+\item Allgemeine Helmholtz-Gleichung (beliebige Felder $\underline{\vec{A}}$)
+\begin{align}
+\Delta \underline{\vec{A}} + \underline{k}^2 \underline{\vec{A}} &= 0 \quad \text{mit } \underline{k} = \beta - j\alpha
+\end{align}
+$\rightarrow \beta$ Phasenkonstante, $\alpha$ Dämpfungskonstante
+
+
+\hypertarget{helmholtz_allgemeine_loesung}{Allgemeine Lösung (1D-Fall):}\\
+\begin{equation}
+\underline{A}(x) = \underline{C}_1 e^{\underline{k} \cdot x} + \underline{C}_2 e^{-\underline{k} \cdot x}
+\end{equation}
+\begin{equation}
+\underline{A}(x) = \underline{K}_1 \cosh(\underline{k} \cdot x) + \underline{K}_2 \sinh(\underline{k} \cdot x)
+\end{equation}
+\textit{Hinweis:} Bei Helmholtz-Gleichung immer 1D-Abhängigkeit (Bsp.: d/dy = d/dz = 0), sonst müsste man rot() mitbeachten.
+
+
+
+
+
+
+\item Inhomogen oder Quellterm ??? in dieser Sektion gibt es noch Probleme :((: 
+\begin{equation}
+\Delta \underline{\vec{A}} + k^2(\vec{r}) \underline{\vec{A}} = \vec{Q}
+\end{equation}
+Inhomogen ($\varepsilon(\vec{r})$), Quellterm ($\vec{J}_e \neq 0$): 
+\begin{equation}
+\Delta\vec{H} + k^2(\vec{r})\vec{H} = -\text{rot } \vec{J} \quad \text{mit } k(\vec{r}) = \omega\sqrt{\mu_0\varepsilon(\vec{r})}
+\end{equation}
+
+
+\end{itemize}
+
+
+\textbf{Elektrodynamik:}
+\begin{itemize}
+\item $\Phi = k_c \frac{Q}{|\vec{r}|}$ -- Elektrisches Potential \hfill $[\Phi] = \text{V}$
+\item $\vec{E} = -\text{grad } \Phi$ -- Elektrisches Feld (elektrostatischer Fall) \hfill $[\vec{E}] = \frac{\text{N}}{\text{C}} = \frac{\text{V}}{\text{m}}$
+\item $\vec{D} = \varepsilon \vec{E}$ -- Elektrische Flussdichte (Verschiebungsdichte/ Verschiebungsfeld) \hfill $[\vec{D}] = \frac{\text{C}}{\text{m}^2} = \frac{\text{As}}{\text{m}^2}$
+\item $\vec{J} = \kappa \vec{E}$ -- elektrische Stromdichte (Volumenstromdichte) \hfill $[\vec{J}] = \frac{\text{A}}{\text{m}^2}$
+\item $\vec{K} = \vec{J} \cdot d$ -- Oberflächenstromdichte \hfill $[\vec{K}] = \frac{\text{A}}{\text{m}}$
+\item $\vec{H}$ -- Magnetisches Feld \hfill $[\vec{H}] = \frac{\text{A}}{\text{m}}$
+\item $\vec{A}$ -- Vektorpotential (magnetisches Wirbelpotential) \hfill $[\vec{A}] = \frac{\text{Wb}}{\text{m}} = \frac{\text{Vs}}{\text{m}}$
+\item $\vec{B} = \mu \vec{H} = \text{ rot }\vec{A}$ -- Magnetische Flussdichte \hfill $[\vec{B}] = \text{T} = \frac{\text{Wb}}{\text{m}^2} = \frac{\text{Vs}}{\text{m}^2}$
+\item $\psi \text{ oder } \Psi \text{ oder } \Phi = \int \vec{B} \cdot d\vec{A}$ -- Magnetischer Fluss \hfill $[\psi] = \text{Wb} = \text{Vs}$
+\item $M = \frac{\psi}{I}$ -- Gegeninduktivität \hfill $[M] = \text{H} = \frac{\text{Wb}}{\text{A}} = \frac{\text{Vs}}{\text{A}}$
+\item $\varrho$ oder $\rho$ -- Raumladungsdichte \hfill $[\varrho] = \frac{\text{C}}{\text{m}^3} = \frac{\text{As}}{\text{m}^3}$
+\item $\sigma$ -- Flächenladungsdichte \hfill $[\sigma] = \frac{\text{C}}{\text{m}^2} = \frac{\text{As}}{\text{m}^2}$
+\item $\lambda$ -- Linienladungsdichte \hfill $[\lambda] = \frac{\text{C}}{\text{m}} = \frac{\text{As}}{\text{m}}$
+\item $\omega = 2\pi f$ -- Kreisfrequenz \hfill $[\omega] = \frac{1}{\text{s}}$
+\item $k = \omega \sqrt{\epsilon\mu}$ -- Wellenzahl (verlustfreie Medien)  \hfill $[k] = \frac{1}{\text{m}}$
+\item $\underline{p} = \sqrt{j\omega\kappa\mu} = \sqrt{\frac{\omega\kappa\mu}{2}}(1+j) = \frac{1+j}{\delta}$ -- Propagationskonstante (MQS, verlustbehaftete Medien) \hfill  $[\underline{p}] = \frac{1}{\text{m}}$
+\item $\delta = \sqrt{\frac{2}{\omega\kappa\mu}}$ -- Eindringtiefe/ Skintiefe (Tiefe bei $e^{-1} \approx 37\%$ Amplitude) \hfill $[\delta] = \text{m}$
+\item $p_V = \vec{J} \cdot \vec{E} = \frac{|\vec{J}|^2}{\kappa}$ -- Volumenverlustleistungsdichte \hfill $[p_V] = \frac{\text{W}}{\text{m}^3} = \frac{\text{A} \text{V}}{\text{m}^3} $
+\item $P_V = \int_V p_V \, dV$ -- Gesamte Verlustleistung (V für Verlust)\hfill $[P_V] = \text{W} = \text{A}\text{V}$
+\item $\vec{S} = \vec{E} \times \vec{H}$ -- Poynting-Vektor (Energieflussdichte) \hfill $[\vec{S}] = \frac{\text{W}}{\text{m}^2}= \frac{\text{A} \text{V}}{\text{m}^2} $
+\item $Z = \sqrt{\frac{\mu}{\varepsilon}}$ -- Wellenimpedanz \hfill $[Z] = \Omega = \frac{\text{V}}{\text{A}}$
+\end{itemize}
+
+
+\textbf{Materialparameter:}
+\begin{itemize}
+\item $\varepsilon = \varepsilon_0 \varepsilon_r$ -- Permittivität (Dielektrizitätskonstante) \hfill $[\varepsilon] = \frac{\text{F}}{\text{m}} = \frac{\text{As}}{\text{Vm}}$
+\item $\mu = \mu_0 \mu_r$ -- Permeabilität (Magnetische Durchlässigkeit) \hfill $[\mu] = \frac{\text{H}}{\text{m}} = \frac{\text{Vs}}{\text{Am}}$
+\item $\kappa$ oder $\sigma$ -- Elektrische Leitfähigkeit \hfill $[\kappa] = \frac{\text{S}}{\text{m}} = \frac{\text{A}}{\text{Vm}}$
+\item $\kappa_{\text{äq}} = \omega\varepsilon''\tan(\delta)$ -- äquivalente Leitfähigkeit \hfill $[\kappa_{\text{äq}}] = \frac{\text{S}}{\text{m}} = \frac{\text{A}}{\text{Vm}}$
+\end{itemize}
+
+
+\textbf{Elektromagnetische Energien:}
+\begin{itemize}
+\item $w_e = \frac{1}{2} \vec{E} \cdot \vec{D}$ -- Elektrische Energiedichte \hfill $[w_e] = \frac{\text{J}}{\text{m}^3} = \frac{\text{Ws}}{\text{m}^3}$
+\item $\displaystyle W_e = \int\limits_V w_e \, dV$ \quad -- Elektrische Energie \hfill $[W_e] = \text{J} = \text{Ws}$
+\begin{flalign*}
+&= \frac{1}{2} \left(\int\limits_V \varrho \Phi \, dV - \oint\limits_{\partial V} \Phi \vec{D} \cdot d\vec{A}\right) \xrightarrow[\partial V \to \infty]{\text{lok. } \varrho} \frac{1}{2} \int\limits_V \varrho \Phi \, dV   \quad \text{ (bei Elektrostatik)} &&
+\end{flalign*}
+\item $w_m = \frac{1}{2} \vec{H} \cdot \vec{B}$ -- Magnetische Energiedichte \hfill $[w_m] = \frac{\text{J}}{\text{m}^3} = \frac{\text{Ws}}{\text{m}^3}$
+\item $W_m = \int\limits_V w_m \, dV$ -- Magnetische Energie \hfill $[W_m] = \text{J} = \text{Ws}$
+\item $w_{em} = w_e + w_m$ -- Gesamte Energiedichte \hfill $[w_{em}] = \frac{\text{J}}{\text{m}^3} = \frac{\text{Ws}}{\text{m}^3}$
+\item $W_{em} = W_e + W_m$ -- Gesamte Energie \hfill $[W_{em}] = \text{J} = \text{Ws}$
+\end{itemize}
+
+
+\textbf{Stichwörter:}
+\begin{itemize}
+\item Lineare, Isotrope und Homogene Materie
+\item Isotrop: Materialkonstanten richtungsunabhängig (über Materialgleichungen verknüpfte Größen haben dieselbe Richtung)
+\item homogenes, verlustfreies Medium $\Leftrightarrow$ $\epsilon$, $\mu$ konst.; $\kappa = 0$
+\item Transversal: quer zur Ausbreitungsrichtung
+\end{itemize}
+
+
+\textbf{Kräfte:}
+\begin{itemize}
+\item $\vec{F} = Q(\vec{E} + \vec{v} \times \vec{B})$ -- Lorentz-Kraft \hfill $[\vec{F}] = \text{N} = \frac{\text{kg} \cdot \text{m}}{\text{s}^2}$
+\item $\vec{F_C} = Q\vec{E}$ -- Coulomb-Kraft ($|\vec{v}| = 0$)
+\item $\vec{F_L} = Q(\vec{v} \times \vec{B})$ -- Magnetische Lorentz-Kraft
+\end{itemize}
+
+
+\textbf{Konstanten:}
+\begin{itemize}
+\item $c = \sqrt{\frac{1}{\mu \varepsilon}}$; $c_0 = \sqrt{\frac{1}{\mu_0 \varepsilon_0}} \approx 3 \cdot 10^8 \frac{\text{m}}{\text{s}}$ -- Lichtgeschwindigkeit \hfill $[c] = \frac{\text{m}}{\text{s}}$
+\item $k_c \text{ oder } k = \frac{1}{4\pi\varepsilon_0}$ -- Coulomb-Konstante (für Vakuum) \hfill $[k] = \frac{\text{N} \cdot \text{m}^2}{\text{C}^2} = \frac{\text{Vm}}{\text{As}}$
+\item $k_{medium} = \frac{1}{4\pi\varepsilon_0\varepsilon_r}$ -- Coulomb-Konstante (für Medium) \hfill $[k] = \frac{\text{N} \cdot \text{m}^2}{\text{C}^2} = \frac{\text{Vm}}{\text{As}}$
+\end{itemize}
+
+
+\textbf{Mathematische Identitäten:}
+\begin{itemize}
+\item $\text{div rot } \vec{A} = 0$
+\item $\text{rot grad } \Phi = 0$ -- Merksatz: Rot kraut ist tief rot, beide sind null
+\item $\text{rot rot } \vec{A} = \text{grad div } \vec{A} - \nabla^2 \vec{A} = \text{grad div } \vec{A} - \Delta \vec{A}$
+\item $\text{rot}(\vec{A} - \vec{B}) = \text{rot } \vec{A} - \text{rot } \vec{B}$
+\item $\text{rot}(A(\vec{r}) \cdot \vec{B}) = (\text{grad}\,A(\vec{r})) \times \vec{B} + A(\vec{r}) \cdot \text{rot}\,\vec{B}$
+\item $\nabla \times (A(\vec{r}) \vec{B}) = (\nabla A(\vec{r})) \times \vec{B} + A(\vec{r}) (\nabla \times \vec{B})$
+\item $\nabla \cdot (A(\vec{r}) \vec{B}) = (\nabla A(\vec{r})) \cdot \vec{B}   + A(\vec{r}) (\nabla \cdot \vec{B})$
+\item $\int\limits_A \text{rot } \vec{v} \cdot d\vec{A} = \oint\limits_{\partial A} \vec{v} \cdot d\vec{s}$ -- Stokes'scher Integralsatz
+\item $\int\limits_V \text{div } \vec{v} \, dV = \oint\limits_{\partial V} \vec{v} \cdot d\vec{A}$ -- Gaußscher Integralsatz
+\item $j = \frac{(1+j)^2}{2}$ oder $\sqrt{j} = \frac{1+j}{\sqrt{2}}$
+\item $e^{j\theta} = \cos(\theta) + j \sin(\theta)$ -- Eulersche Formel
+\item $x^2 + y^2 = r^2$ -- Kreisgleichung
+\item $\cos^2(x) + \sin^2(x) = 1$ -- Trigonometrische Identität
+\item $x^2 - y^2 = r^2$ -- HyperbelGleichung
+\item $\cosh^2(x) - \sinh^2(x) = 1$ -- Hyperbolische Identität
+\item $\cosh(\underline{z}) = \cos(j\underline{z})$
+\item $\sinh(\underline{z}) = -j\sin(j\underline{z})$
+\item $e^x - e^{-x} = 2\sinh(x)$
+\item $e^x + e^{-x} = 2\cosh(x)$
+\item $(1 + p)^q \approx 1 + pq \quad \text{für } p \ll 1$
+
+
+
+
+\item $\text{div } \vec{A} = \frac{1}{\varrho} \frac{\partial(\varrho A_\varrho)}{\partial \varrho} + \frac{1}{\varrho} \frac{\partial A_\varphi}{\partial \varphi} + \frac{\partial A_z}{\partial z}$ -- Zylinder koo.
+\item $\text{grad } \Phi = \frac{\partial \Phi}{\partial \varrho} \vec{e}_\varrho + \frac{1}{\varrho} \frac{\partial \Phi}{\partial \varphi} \vec{e}_\varphi + \frac{\partial \Phi}{\partial z} \vec{e}_z$ -- Zylinder koo.
+
+\item $\int \frac{1}{1+ax} dx = \frac{1}{a} \int \frac{1}{u} du = \frac{1}{a} \ln|u| + C = \frac{1}{a} \ln|1+ax| + C$ \quad\quad (Substitution: $u = 1 + ax \Rightarrow du = a \, dx \Rightarrow dx = \frac{1}{a} du$)
+\item $\int \frac{1}{x} dx = \ln|x| + C \quad \Leftrightarrow \quad \frac{d}{dx}[\ln|x|] = \frac{1}{x}$
+\end{itemize}
+
+
+
+
+\textbf{Koordinaten:}
+\begin{itemize}
+\item $\rho$ oder $\varrho$ -- Radiale Koordinate (Abstand von z-Achse), $\rho \geq 0$
+\item $\varphi$ oder $\phi$ -- Azimutwinkel in x-y-Ebene, $0 \leq \varphi < 2\pi$
+\item $\vartheta$ oder $\theta$ -- Polarwinkel oder Zenitwinkel, $0 \leq \vartheta \leq \pi$
+\end{itemize}
+
+Kugelvolumen:
+\begin{itemize}
+\item $V = \int\limits_V dV = \int\limits_0^R \int\limits_0^{2\pi} \int\limits_0^{\pi} r^2 \sin\vartheta \, d\vartheta \, d\varphi \, dr = \left[\frac{r^3}{3}\right]_0^R \cdot 2\pi \cdot \left[-\cos\vartheta\right]_0^{\pi} = \frac{R^3}{3} \cdot 2\pi  \cdot 2 = \frac{4\pi R^3}{3}$
+
+\item $A = \oint\limits_{\partial V} d\vec{A} = \int\limits_0^{2\pi} \int\limits_0^{\pi} r^2 \sin\vartheta \, d\vartheta \, d\varphi = 4\pi r^2$
+\end{itemize}
+
+
+\textbf{Nabla-Operator:}
+\begin{itemize}
+\item $\nabla = \left(\frac{\partial}{\partial x}, \frac{\partial}{\partial y}, \frac{\partial}{\partial z}\right)$
+\item $\nabla \Phi = \text{grad } \Phi$ -- Gradient (Nabla auf Skalarfeld)
+\item $\text{div grad } \Phi = \nabla \cdot (\nabla \Phi) =  \nabla^2 \Phi = \Delta \Phi$ -- Laplace-Operator (Dreieck auf dem Kopf)
+\end{itemize}
+
+
+\textbf{Rot-Operator:}
+
+\begin{itemize}
+\item $\vec{a} \times \vec{b} = \begin{pmatrix}
+a_2 b_3 - b_2 a_3 \\
+a_3 b_1 - b_3 a_1 \\
+a_1 b_2 - b_1 a_2
+\end{pmatrix}$
+\item $\text{rot }\vec{E} =\nabla \times \vec{E} = \begin{pmatrix}
+\frac{\partial E_z}{\partial y} - \frac{\partial E_y}{\partial z} \\[0.5em]
+\frac{\partial E_x}{\partial z} - \frac{\partial E_z}{\partial x} \\[0.5em]
+\frac{\partial E_y}{\partial x} - \frac{\partial E_x}{\partial y}
+\end{pmatrix}$
+\end{itemize}
+
+\textbf{Matrixschreibweise für Basisfunktionen:}\\
+Die geschweifte Klammer-Notation $\begin{Bmatrix} f_1 \\ f_2 \end{Bmatrix}$ steht für eine \textbf{Linearkombination} der Basisfunktionen:
+\begin{align}
+\begin{Bmatrix} f_1 \\ f_2 \end{Bmatrix} &\equiv A \cdot f_1 + B \cdot f_2
+\end{align}
+
+Beispiele:
+\begin{align}
+\begin{Bmatrix} 1 \\ \ln\rho \end{Bmatrix} \begin{Bmatrix} 1 \\ \varphi \end{Bmatrix} + \begin{Bmatrix} \rho^n \\ \rho^{-n} \end{Bmatrix} \begin{Bmatrix} \cos(n\varphi) \\ \sin(n\varphi) \end{Bmatrix} &= (A_0 + B_0 \ln\rho)(C_0 + D_0 \varphi) \\
+&\quad + (A_1 \rho^n + B_1 \rho^{-n})(C_1 \cos(n\varphi) + D_1 \sin(n\varphi))
+\end{align}
+

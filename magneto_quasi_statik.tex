@@ -1,0 +1,65 @@
+\section{Magnetoquasistik MQS}
+
+Vereinfachte Maxwell-Gleichungen ($\frac{\partial \vec{D}}{\partial t} \ll \vec{J}$):
+
+\begin{itemize}
+\item $\text{rot } \underline{\vec{E}} + j\omega \underline{\vec{B}} = 0$
+\item $\text{rot } \underline{\vec{H}} = \underline{\vec{J}}$
+\end{itemize}
+
+Bedingung: $\frac{\omega \varepsilon}{\kappa} \ll 1$\\
+$\rightarrow$ Herleitung: $j\omega \underline{\vec{D}} \ll \underline{\vec{J}}$
+
+
+
+
+
+\textbf{Diffusionsgleichung:} (MQS; $\kappa$, $\mu$ konst.; $\text{div } \vec{E} = \text{div } \vec{H} = 0$) \hfill $\rightarrow$ Herleitung: $\text{rot } \vec{E} + \frac{\partial \vec{B}}{\partial t} = 0$ und
+\begin{flushright}
+\phantom{$\rightarrow$ Herleitung: }$\text{rot } \vec{H} - \frac{\partial \vec{D}}{\partial t} = \vec{J}$
+\end{flushright}
+
+
+Zeitbereich, z.B. 1D-Funktion $H(x,t)$:
+\begin{equation}
+\frac{\partial^2 H}{\partial x^2} - \kappa\mu \frac{\partial H}{\partial t} = 0
+\end{equation}
+
+
+Fourier-Transformation (Frequenzbereich):
+\begin{align}
+\frac{d^2 \underline{H}}{dx^2} - \underline{p}^2 \underline{H} &= 0 \quad \text{mit } \underline{p}^2 = j\omega\kappa\mu \\
+\Delta \underline{\vec{H}} - \underline{p}^2 \underline{\vec{H}} &= 0 \\
+\Delta \underline{\vec{E}} - \underline{p}^2 \underline{\vec{E}} &= 0
+\end{align}
+
+
+Laplace-Transformation $\underline{H}(x, \underline{s})$ (Anfangsbedingung $H(x, t = 0) = 0$):
+
+\begin{equation}
+\frac{\partial^2 \underline{H}(x,\underline{s})}{\partial x^2} - \underline{p}^2 \underline{H}(x,\underline{s}) = 0 \quad \text{mit } \underline{p}^2 = \kappa\mu \underline{s}
+\end{equation}
+
+Allgemeine Lösung (für Fourier- und Laplace-Transformation mit Anfangsbedingung $H(x, t = 0) = 0$):
+
+$\rightarrow$ siehe \hyperlink{helmholtz_allgemeine_loesung}{allgemeine Helmholtz-Gleichung}
+
+\textbf{Feldabfall (bei MQS):}
+
+
+Exponentieller Abfall im quasistatischen Fall:
+\begin{align}
+|\underline{H}(d)| = H_0 e^{-\frac{d}{\delta}}
+\end{align}
+
+
+Feldverhältnis der Ränder: 
+\begin{align}
+\frac{H(d)}{H(0)}
+\end{align}
+
+
+\textbf{Poyntingscher Satz:}
+\begin{align}
+-\frac{\partial w_{em}}{\partial t} = \text{div}(\vec{S}) + p_V
+\end{align}
