@@ -1,3 +1,9 @@
+# Elektromagnetische Felder (TET1) - Formelsammlung
+
+> **Hinweis:** Ich garantiere nicht für Vollständigkeit oder Richtigkeit, mir persönlich hat die Übersicht aber sehr geholfen. Die Formeln sollten alle richtig sein.
+
+
+
 TU Berlin Modul:
 
 Elektromagnetische Felder (TET1)
@@ -6,10 +12,9 @@ https://moseskonto.tu-berlin.de/moses/modultransfersystem/bolognamodule/beschrei
 
 
 
-# Stochastic Information Transmission Formulas
+## Stochastic Information Transmission Formulas
 
 See main.pdf and tet-lernen.md
-
 
 
 
